@@ -9,6 +9,8 @@
     <h2>LostJerome</h2>
 </h1>
 <br/>
-<a href="hello-servlet">Hello Servlet</a>
+<a href="hello-servlet">Hello Servlet</a><br>
+<a href="subject_form.html">Add New Subject</a><br>
+<a href="calculator.html">Calculator</a>
 </body>
 </html>
