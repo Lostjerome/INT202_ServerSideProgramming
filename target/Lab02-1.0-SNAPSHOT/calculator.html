@@ -6,10 +6,14 @@
 </head>
 <body>
     <form method="post" action="Calculator">
-        <label>First Number:</label>
-        <input type="number" name="firstNumber" required><br>
-        <label>Second Number:</label>
-        <input type="number" name="secondNumber" required><br>
+        <input type="number" name="firstNumber" placeholder="firstNumber" required>
+        <select name="operator">
+            <option value="+">+ (increase)</option>
+            <option value="-">- (decrease)</option>
+            <option value="*">* (multiply)</option>
+            <option value="/">/ (divide)</option>
+        </select>
+        <input type="number" name="secondNumber" placeholder="secondNumber" required><br><br>
         <input type="submit" value="Calculate">
 </body>
 </html>

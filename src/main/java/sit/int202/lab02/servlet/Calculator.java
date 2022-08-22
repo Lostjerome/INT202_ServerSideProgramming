@@ -22,8 +22,22 @@ public class Calculator extends HttpServlet {
     protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         Double firstNumber = Double.parseDouble(request.getParameter("firstNumber"));
         Double secondNumber = Double.parseDouble(request.getParameter("secondNumber"));
-
-        Double result = firstNumber + secondNumber;
+        String operation = request.getParameter("operator");
+        Double result = 0.0;
+        switch (operation){
+            case "-":
+                result = firstNumber - secondNumber;
+                break;
+            case "*":
+                result = firstNumber * secondNumber;
+                break;
+            case "/":
+                result = firstNumber / secondNumber;
+                break;
+            default:
+                result = firstNumber + secondNumber;
+        }
+        request.setAttribute("operation", operation);
         request.setAttribute("firstNumber", firstNumber);
         request.setAttribute("secondNumber", secondNumber);
         request.setAttribute("result", result);
