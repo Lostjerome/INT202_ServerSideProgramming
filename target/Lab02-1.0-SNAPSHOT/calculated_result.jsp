@@ -11,6 +11,7 @@
     <title>Result</title>
 </head>
 <body>
-<h1>Result: ${result}</h1>
+    <h1>Result: ${result}</h1>
+    <p>${firstNumber} + ${secondNumber} = ${result}</p>
 </body>
 </html>
