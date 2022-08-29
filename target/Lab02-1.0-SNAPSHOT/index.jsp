@@ -11,6 +11,7 @@
 <br/>
 <a href="hello-servlet">Hello Servlet</a><br>
 <a href="subject_form.html">Add New Subject</a><br>
-<a href="calculator.html">Calculator</a>
+<a href="calculator.html">Calculator</a><br>
+<a href="addedInformation.jsp">Add Information</a>
 </body>
 </html>
