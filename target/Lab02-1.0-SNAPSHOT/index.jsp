@@ -23,7 +23,9 @@
     <a href="subject_form.html" class="btn btn-outline-dark mr-2">Add New Subject</a><br>
     <a href="calculator.html" class="btn btn-outline-dark mr-2">Calculator</a><br>
     <a href="addedInformation.jsp" class="btn btn-outline-dark mr-2">Add Information</a><br>
-    <a href="test_scope.jsp" class="btn btn-outline-dark mr-2">Test Scope</a>
+    <form action="TestScopeServlet" method="post">
+        <input type="submit" value="Test scope" class="btn btn-outline-dark mr-3">
+    </form>
 </div>
 </body>
 </html>

@@ -13,13 +13,16 @@
 </head>
 <body>
 <div class="container mt-3">
-<p>Request Scope: ${rc}</p>
-<p>Session Scope: ${sc}</p>
-<p>Application Scope: ${ac}</p>
-<form action="TestScopeServlet" method="get">
-    <a href="index.jsp" class="btn btn-outline-dark">Back</a>
-    <input type="submit" value="Test scope" class="btn btn-dark mr-3">
-</form>
+    <div class="card">
+        <div class="card-body">
+            <p>Request Scope: <span class="text-primary">${rc}</span></p>
+            <p>Session Scope: <span class="text-primary">${sc}</span></p>
+            <p>Application Scope: <span class="text-primary">${ac}</span></p>
+
+                <a href="index.jsp" class="btn btn-outline-dark">Back</a>
+                <a href="test_scope.jsp" class="btn btn-dark ">Go to test_scope.jsp</a>
+        </div>
+    </div>
 </div>
 </body>
 </html>
