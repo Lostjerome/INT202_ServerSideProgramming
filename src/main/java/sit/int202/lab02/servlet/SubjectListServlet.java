@@ -11,15 +11,36 @@ import java.util.List;
 
     @WebServlet(name = "SubjectListServlet", value = "/SubjectListServlet")
 public class SubjectListServlet extends HttpServlet {
+        private int count = 0;
+        List<Subject> subjects;
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    List<Subject> subjects = new SubjectRepository().findAll();
+        count++;
+//    List<Subject> subjects = new SubjectRepository().findAll();
     request.setAttribute("subjects",subjects);
+    request.setAttribute("count",count);
     request.getRequestDispatcher("/subject_listing.jsp").forward(request,response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+    }
+    @Override
+    public void init(ServletConfig config) throws ServletException{
+        super.init(config);
+        this.subjects = new SubjectRepository().findAll();
+    }
+
+    @Override
+        public void destroy(){
+        super.destroy();
+        System.out.println("SubjectList has been destroyed");
+        System.out.println("SubjectList has been destroyed");
+        System.out.println("SubjectList has been destroyed");
+        System.out.println("SubjectList has been destroyed");
+        System.out.println("SubjectList has been destroyed");
+        System.out.println("SubjectList has been destroyed");
+        System.out.println("SubjectList has been destroyed");
     }
 }

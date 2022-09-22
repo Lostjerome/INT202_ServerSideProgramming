@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Result</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 </head>
 <body>
     <h1>Result: ${result}</h1>

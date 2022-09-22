@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Add new subject</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 </head>
 <body>
-<h3>Add new subject</h3>
-<hr>
-<form method="post" action="AddSubject">
-    <label>Subject Id:</label>
-    <input type="text" name="subjectId" required><br>
-    <label>Subject Title:</label>
-    <input type="text" name="subjectTitle" required><br>
-    <label>Credit:</label>
-    <input type="number" name="Credit" required max="6" min="1"><br>
-    <input type="submit" value="Add">
-</form>
-<hr>
-<a href="index.jsp">Back</a>
+<div class="container">
+    <h3 class="mt-5">Add new subject</h3>
+    <form method="post" action="AddSubject">
+
+        <div class="d-flex row">
+            <div class="input-group col-5 mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text">Subject Id:</label>
+                </div>
+                <input type="text" name="subjectId" class="form-control" required>
+            </div>
+        </div>
+        <div class="d-flex row">
+            <div class="input-group col-5 mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text">Subject Title:</label>
+                </div>
+                <input type="text" name="subjectTitle" class="form-control" required>
+            </div>
+        </div>
+        <div class="d-flex row">
+            <div class="input-group col-5 mb-3 ">
+                <div class="input-group-prepend">
+                    <label class="input-group-text">Credit:</label>
+                </div>
+                <input type="number" name="Credit" class="form-control" required max="6" min="1">
+            </div>
+        </div>
+        <div class="mt-2">
+            <a href="index.jsp" class="btn btn-outline-dark">Back</a>
+            <input type="submit" value="Add" class="btn btn-dark">
+        </div>
+    </form>
+</div>
 </body>
 </html>

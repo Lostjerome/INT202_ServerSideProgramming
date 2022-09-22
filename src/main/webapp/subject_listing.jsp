@@ -11,10 +11,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 </head>
-<body style="margin-left: 20px">
-<div class="container-fluit">
-    <h3>Subject Listing:</h3>
-    <div class="row bg-light">
+<body>
+<div class="container">
+    <h3 class="mt-5">Subject Listing: Request ${count}</h3>
+    <div class="row bg-dark text-white rounded p-1">
         <div class="col-1">No.</div>
         <div class="col-1">Subject Id</div>
         <div class="col-3">Subject Title</div>

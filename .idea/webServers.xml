@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0b0ae88c-1fda-4c34-ad32-36b0c4c4bdb0" name="s651int202v017.sit.kmutt.ac.th" url="http://s651int202v017.sit.kmutt.ac.th">
+        <fileTransfer rootFolder="/home/int202student" accessType="SFTP" host="s651int202v017.sit.kmutt.ac.th" port="22" sshConfigId="cefd4e97-b2f1-42c1-adc1-b282699f7be3" sshConfig="int202student@s651int202v017.sit.kmutt.ac.th:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
