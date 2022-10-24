@@ -21,11 +21,13 @@ public class TestScopeServlet extends HttpServlet {
     public void doAction(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("rc","This is request scope");
 
+        HttpSession session = request.getSession();
+        session.setAttribute("sc", "This is session scope");
+
         ServletContext context = getServletContext();
         context.setAttribute("ac","This is application scope");
 
-        HttpSession session = request.getSession();
-        session.setAttribute("sc","This is session scope");
+
 
         getServletContext().getRequestDispatcher("/test_scope.jsp").forward(request,response);
     }

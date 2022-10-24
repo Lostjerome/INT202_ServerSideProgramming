@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 </head>
 <body>
-<div class="container mt-3">
-    <div class="card">
+N    <div class="card">
         <div class="card-body">
             <p>Request Scope: <span class="text-primary">${rc}</span></p>
             <p>Session Scope: <span class="text-primary">${sc}</span></p>
